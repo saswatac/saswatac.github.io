@@ -1,28 +1,43 @@
-baseurl = "https://saswatac.github.io" # Hostname (and path) to the root.
-title = "Saswata Chakravarty" # Site title.
-theme = "coder-portfolio" # Set the theme.
-languagecode = "en" # The site’s language code used to generate RSS.
-defaultcontentlanguage = "en" # The default content language.
+baseurl = "https://saswatac.github.io"
+title = "Saswata Chakravarty"
 
-paginate = 20 # Default number of pages per page in pagination.
+theme = "coder-portfolio"
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
+DefaultContentLanguage = "en"
 
-# disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
+paginate = 20
 
-[params] # theme parameters
-    author = "Saswata Chakravarty" # Author's name.
-    info = "Software Engineer" # Author's job title or info.
-    description = "Saswata Chakravarty's personal website" # Site description.
-    keywords = "blog,developer,personal,ai,machine learning" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsUseClasses = true
 
-    # Whether you want to hide copyright and credits in the footer.
+# disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Saswata Chakravarty"
+    description = "Saswata Chakravarty's personal website"
+    keywords = "blog,developer,personal,ai,data,deep learning"
+    info = "Software and Machine Learning Engineer"
+    avatarurl = "images/avatar.jpg"
+    #footercontent = "Enter a text here."
+    #fixedbarContent = "Do you want to know me more private?→"
+    #fixedbarContentAfter = "Thank You! Please share it if you like it→"
+
     hideCredits = false
     hideCopyright = false
+
+    # Bottom sns share
+    snsShare = true
+    # Popular sns share
+    # if you want add sns. please message!
+    enableTwitterShare = false
+    enableFacebookShare = false
+    enableHatenaShare = false
+    enableLineShare = false
+    enableLinkedInShare = false
+
+    thumbnail = "images/tn.png"
 
     # Custom CSS
     custom_css = []
@@ -33,46 +48,38 @@ pygmentsUseClasses = true # new add
     # RTL support
     rtl = false
 
-    # snsShare = true
+    langseparator = "|"
 
-    thumbnail = "images/tn.png" # default sns thumbnail
-
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
-
-# Social links
 [[params.social]]
     name = "Github"
+    icon = "fab fa-2x fa-github"
     weight = 1
-    url = "https://github.com/saswatac"
-    icon = "fab fa-github"
+    url = "https://github.com/saswatac/"
 [[params.social]]
     name = "Twitter"
+    icon = "fab fa-2x fa-twitter"
     weight = 2
-    url = "https://twitter.com/iamsaswata"
-    icon = "fab fa-twitter"
+    url = "https://twitter.com/iamsaswata/"
 [[params.social]]
     name = "LinkedIn"
+    icon = "fab fa-2x fa-linkedin"
     weight = 3
     url = "https://www.linkedin.com/in/saswatac/"
-    icon = "fab fa-linkedin-in"
 [[params.social]]
     name = "Medium"
+    icon = "fab fa-2x fa-medium"
     weight = 4
     url = "https://saswatac.medium.com"
-    icon = "fab fa-medium-m"
-[[params.social]]
-    name = "Instagram"
-    weight = 4
-    url = "https://www.instagram.com/saswatachak/"
-    icon = "fab fa-instagram"
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "posts"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "about"
+[languages]
+    [languages.en]
+        languagecode = "en"
+        languagename = "English" # The language name to be displayed in the selector.
+
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 1.0
+                url = "about"
